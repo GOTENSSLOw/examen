@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen HTML</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-        <!-- Panel derecho -->
-        <div class="right-panel">
-            <div class="overlay">
-                <div class="graphic">
-                    <h1>Aprendemos para servir</h1>
-                    <p>Vamos a conectarnos</p>
-                    <img src="img/images.jpeg" alt="Graphic">
-                </div>
-            </div>
-        </div>
-        
-        <!-- Panel izquierdo -->
+        <!-- Panel izquierdo (Login) -->
         <div class="left-panel">
-            <h2>LOGIN</h2>
+            <h2>Login</h2>
             <form>
                 <div class="input-group">
-                    <label for="usuario">Ingrese su Gmail:</label>
-                    <input type="email" id="usuario" name="usuario" placeholder="Ingrese su Gmail" required>
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Ingrese su email" required>
                 </div>
                 <div class="input-group">
-                    <label for="contraseña">Ingrese su contraseña:</label>
-                    <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña" required>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Ingrese su clave" required>
                 </div>
+                <a href="#" class="forgot-password">¿Olvidó su clave?</a>
                 <button type="submit">Ingresar</button>
+                <p class="register">¿Aún no tienes una cuenta? <a href="#">Regístrate ahora</a></p>
             </form>
+        </div>
+
+        <!-- Panel derecho (Imagen) -->
+        <div class="right-panel">
+            <div class="overlay">
+                <h1>Aprendemos para servir</h1>
+                <p>Vamos a conectarnos</p>
+            </div>
+            <img src="img/images.jpeg" alt="Imagen educativa">
         </div>
     </div>
 </body>

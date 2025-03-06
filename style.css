@@ -1,53 +1,151 @@
+/* Reset y estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif; /* Quité las comillas innecesarias alrededor de Arial */
+    font-family: 'Arial', sans-serif;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Cambié `height: 50vh` a `min-height: 100vh` para asegurar que ocupe toda la pantalla vertical */
-    background-color: #32075d;
-    margin: 0; /* Aseguramos que no haya márgenes añadidos */
+    height: 100vh;
+    background-color: #6a0dad; /* Color de fondo similar a la imagen de referencia */
 }
 
+/* Contenedor principal */
 .container {
     display: flex;
-    justify-content: center; /* Centrar contenido dentro del contenedor */
-    align-items: center; /* Centrar contenido verticalmente */
-    width: 500px;
-    height: 250px;
-    background-color: white; /* Añadí "-color" para consistencia */
+    width: 800px;
+    background: white;
     border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.container img {
+/* Panel izquierdo (Formulario de Login) */
+.left-panel {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+
+.left-panel h2 {
+    color: #4a0a8f;
+    margin-bottom: 20px;
+}
+
+/* Inputs con iconos */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+/* Enlace de olvidó contraseña */
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #6a0dad;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Botón de ingresar */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #520b9b;
+}
+
+/* Registro */
+.register {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register a {
+    color: #6a0dad;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/* Panel derecho (Imagen) */
+.right-panel {
+    flex: 1;
+    position: relative;
+}
+
+.right-panel img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.graphic {
-    position: relative; /* Permite superponer elementos dentro de este contenedor */
+/* Filtro oscuro sobre la imagen */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Oscurece la imagen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
 
-.graphic h1, .graphic p {
-    position: absolute; /* Superpone el texto sobre la imagen */
-    top: 20px; /* Ajusta la posición desde la parte superior */
-    left: 20px; /* Ajusta la posición desde la izquierda */
-    color: white; /* Asegura que el texto sea visible */
-    margin: 0; /* Elimina márgenes no deseados */
+.overlay h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.graphic img {
-    width: 100%; /* La imagen ocupa todo el contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+.overlay p {
+    font-size: 16px;
 }
-
-
 
