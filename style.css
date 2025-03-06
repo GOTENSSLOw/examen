@@ -104,6 +104,7 @@ button:hover {
     color: #6a0dad;
     text-decoration: none;
     font-weight: bold;
+    margin-right: auto;
 }
 
 .register a:hover {
