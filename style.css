@@ -1,4 +1,4 @@
-/* Reset y estilos generales */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +11,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #6a0dad; /* Color de fondo similar a la imagen de referencia */
+    background-color: #6a0dad;
 }
 
-/* Contenedor principal */
+
 .container {
     display: flex;
     width: 800px;
@@ -24,7 +24,7 @@ body {
     overflow: hidden;
 }
 
-/* Panel izquierdo (Formulario de Login) */
+
 .left-panel {
     flex: 1;
     padding: 40px;
@@ -39,7 +39,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Inputs con iconos */
+
 .input-group {
     position: relative;
     margin-bottom: 20px;
@@ -61,7 +61,7 @@ body {
     color: gray;
 }
 
-/* Enlace de olvidó contraseña */
+
 .forgot-password {
     display: block;
     text-align: right;
@@ -75,7 +75,7 @@ body {
     text-decoration: underline;
 }
 
-/* Botón de ingresar */
+
 button {
     width: 100%;
     padding: 12px;
@@ -93,7 +93,7 @@ button:hover {
     background-color: #520b9b;
 }
 
-/* Registro */
+
 .register {
     text-align: center;
     margin-top: 20px;
@@ -110,7 +110,7 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Panel derecho (Imagen) */
+
 .right-panel {
     flex: 1;
     position: relative;
@@ -122,14 +122,14 @@ button:hover {
     object-fit: cover;
 }
 
-/* Filtro oscuro sobre la imagen */
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Oscurece la imagen */
+    background: rgba(0, 0, 0, 0.4); 
     display: flex;
     flex-direction: column;
     justify-content: center;
